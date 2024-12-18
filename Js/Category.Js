@@ -32,7 +32,7 @@ const consoleArray = ["../Img/console item/console-item-1.png","../Img/console i
 
 const weblogArray = ["../Img/weblog img/weblog-item-1.jpg","../Img/weblog img/weblog-item-2.jpg","../Img/weblog img/weblog-item-3.jpg","../Img/weblog img/weblog-item-4.jpg","../Img/weblog img/weblog-item-1.jpg","../Img/weblog img/weblog-item-2.jpg","../Img/weblog img/weblog-item-3.jpg","../Img/weblog img/weblog-item-4.jpg","../Img/weblog img/weblog-item-1.jpg","../Img/weblog img/weblog-item-2.jpg","../Img/weblog img/weblog-item-3.jpg","../Img/weblog img/weblog-item-4.jpg"]
 
-const stockarray = ["../Img/stock img/stock-item-1.jpg","../Img/stock img/stock-item-2.jpg","../Img/stock img/stock-item-3.jpg","../Img/stock img/stock-item-4.jpg","../Img/stock img/stock-item-5.jpg","../Img/stock img/stock-item-6.jpg","../Img/stock img/stock-item-7.jpg","../Img/stock img/stock-item-8.jpg","../Img/stock img/stock-item-9.jpg","../Img/stock img/stock-item-10.jpg","../Img/stock img/stock-item-11.jpg","../Img/stock img/stock-item-12.jpg"]
+const stockarray = ["../Img/stock item/stock-item-1.jpg","../Img/stock item/stock-item-2.jpg","../Img/stock item/stock-item-3.jpg","../Img/stock item/stock-item-4.jpg","../Img/stock item/stock-item-5.jpg","../Img/stock item/stock-item-6.jpg","../Img/stock item/stock-item-7.jpg","../Img/stock item/stock-item-8.jpg","../Img/stock item/stock-item-9.jpg","../Img/stock item/stock-item-10.jpg","../Img/stock item/stock-item-11.jpg","../Img/stock item/stock-item-12.jpg"]
 
 
 
