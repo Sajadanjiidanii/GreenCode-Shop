@@ -1,5 +1,5 @@
 function toggleTheme() {
-    let currentTheme = $.documentElement.getAttribute("data-theme");
+    let currentTheme = document.documentElement.getAttribute("data-theme");
     
     if (currentTheme === "dark") {
       document.documentElement.setAttribute("data-theme", "light");
@@ -7,7 +7,7 @@ function toggleTheme() {
       document.documentElement.setAttribute("data-theme", "dark");
     }
     
-    localStorage.setItem("theme", $.documentElement.getAttribute("data-theme"));
+    localStorage.setItem("theme", document.documentElement.getAttribute("data-theme"));
 }
   
 function loadThemeFromStorage() {
