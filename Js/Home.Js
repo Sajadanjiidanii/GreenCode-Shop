@@ -17,8 +17,17 @@ import { menuModuleHandler } from "../Componets/menu-module/menu-module.js";
 menuModuleHandler();
 
 /// Change Them ///
-import { changeThem } from "../Componets/change-theme/change-theme.js";
-changeThem();
+import { toggleTheme, loadThemeFromStorage } from '../Componets/change-theme/change-theme.js';
+
+const themeModeBtn = document.querySelector("#themModeBtn");
+const themeModeBtnHeader = document.querySelector("#themModeBtnHeader");
+
+themeModeBtn.addEventListener("click", toggleTheme);
+themeModeBtnHeader.addEventListener("click", toggleTheme);
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadThemeFromStorage();
+});
 
 /// Search Handler
 import { searchHandler } from "../Componets/search/search.js";
