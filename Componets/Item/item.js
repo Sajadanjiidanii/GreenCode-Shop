@@ -1,11 +1,11 @@
 let $ = document
 let template = document.createElement("template")
 template.innerHTML = `
-    <link rel="stylesheet" href="Componets/Item/item.css">
-    <link rel="stylesheet" href="Icon/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Componets/Item/item.css">
+    <link rel="stylesheet" href="../Icon/css/font-awesome.min.css">
     <div class="item">
         <div class="itemImgBox">
-            <img id="imgItem" src="Img/pc item/pc-item-1.png">
+            <img id="imgItem" src="../Img/pc item/pc-item-1.png">
         </div>
         <div class="itemInfo">
             <p class="nameItem"></p>
