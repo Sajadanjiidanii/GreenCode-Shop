@@ -1,8 +1,8 @@
 let $ = document
 let template = document.createElement("template")
 template.innerHTML = `
-    <link rel="stylesheet" href="Componets/weblog-item/weblog-item.css">
-    <link rel="stylesheet" href="Icon/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Componets/weblog-item/weblog-item.css">
+    <link rel="stylesheet" href="../Icon/css/font-awesome.min.css">
     
     <div class="weblog">
         <div class="weblogCover">
