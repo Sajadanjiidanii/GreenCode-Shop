@@ -1,23 +1,22 @@
-const $ = document
-let changeThem = () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        $.documentElement.setAttribute('data-theme', savedTheme);
+function toggleTheme() {
+    let currentTheme = $.documentElement.getAttribute("data-theme");
+    
+    if (currentTheme === "dark") {
+      document.documentElement.setAttribute("data-theme", "light");
     } else {
-        $.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.setAttribute("data-theme", "dark");
     }
-
-    const currentTheme = $.documentElement.getAttribute('data-theme');
+    
+    localStorage.setItem("theme", $.documentElement.getAttribute("data-theme"));
+}
   
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+function loadThemeFromStorage() {
+    let savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+    }
+}
 
-    $.documentElement.setAttribute('data-theme', newTheme);
-  
-    localStorage.setItem('theme', newTheme);
-};
-let themModeBtn = $.querySelector("#themModeBtn")
-let themModeBtnHeader = $.querySelector("#themModeBtnHeader")
-themModeBtn.addEventListener("click" , changeThem)
-themModeBtnHeader.addEventListener("click" , changeThem)
-
-export {changeThem}
+export { toggleTheme , loadThemeFromStorage }
