@@ -1,0 +1,50 @@
+/* /// add font /// */
+
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../Font/dana\ font/dana-extrabold.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../Font/dana\ font/dana-bold.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Font/dana\ font/dana-black.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../Font/dana\ font/dana-medium.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../Font/dana\ font/dana-regular.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Font/dana\ font/dana-light.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Font/dana\ font/dana-extralight.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../Font/dana\ font/dana-thin.woff') format(woff);
+}

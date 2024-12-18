@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.weblog{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--bg-item);
+}
+.weblogCover{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.weblog-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.weblogDescrip{
+    display: grid;
+    grid-template-rows: 15% 50% 15% 15%;
+}
+.weblog-title{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 10px 15px 0 0;
+    color: var(--text-color);
+}
+.weblog-subtitle{
+    font-size: 14px;
+    padding: 15px;
+    text-align: justify;
+    color: var(--text-color);
+}
+.weblog-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 15px 0;
+    font-size: 13px;
+    color: var(--text-color);
+}
+.writer , .datewrite{
+    font-family: 'dana';
+    margin: 0 5px;
+}
+a.weblog-showMore{
+    display: block;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    border-top: 1px solid var(--text-color);
+}
+.weblog-showMore:hover{
+    color: var(--hover-color);
+}
