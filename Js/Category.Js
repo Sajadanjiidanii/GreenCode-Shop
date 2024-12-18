@@ -5,8 +5,17 @@ import { item } from "../Componets/Item/item.js";
 window.customElements.define("item-box" , item)
 
 /// change Theme handler
-import { changeThem } from "../Componets/change-theme/change-theme.js";
-changeThem();
+import { toggleTheme, loadThemeFromStorage } from '../Componets/change-theme/change-theme.js';
+
+const themeModeBtn = document.querySelector("#themModeBtn");
+const themeModeBtnHeader = document.querySelector("#themModeBtnHeader");
+
+themeModeBtn.addEventListener("click", toggleTheme);
+themeModeBtnHeader.addEventListener("click", toggleTheme);
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadThemeFromStorage();
+});
 
 /// slider handler
 import { sliderHandler } from "../Componets/slider/slider.js";
