@@ -5,15 +5,15 @@ const statusText = $.querySelector(".status > h3")
 // add user login
 
 const userNameInp = $.querySelector("#userNameInp")
-const userFamilyInp = $.querySelector("#userFamilyInp")
+const userPhoneInp = $.querySelector("#userPhoneInp")
 const userPasswordInp = $.querySelector("#userPasswordInp")
 const addUserBtn = $.querySelector("#addUserBtn")
 
 addUserBtn.addEventListener("click",() => {
-    if(userNameInp.value && userFamilyInp.value && userPasswordInp.value){
+    if(userNameInp.value && userPhoneInp.value && userPasswordInp.value){
         let userInfo = {
             userName : userNameInp.value,
-            userFamily : userFamilyInp.value,
+            userPhone : userPhoneInp.value,
             userPassword : userPasswordInp.value
         }
         
@@ -130,7 +130,7 @@ addItemBtn.addEventListener("click", () => {
     
 })
 
-// remove user login
+// remove weblog
 
 const weblogNameRemove = $.querySelector("#weblogNameRemove")
 const weblogDateRemove = $.querySelector("#weblogDateRemove")
@@ -218,20 +218,20 @@ removeItemBtn.addEventListener("click" , () => {
 // remove user login
 
 const userNameRemove = $.querySelector("#userNameRemove")
-const userFamilyRemove = $.querySelector("#userFamilyRemove")
+const userPhoneRemove = $.querySelector("#userPhoneRemove")
 const removeUserBtn = $.querySelector("#removeUserBtn")
 
 removeUserBtn.addEventListener("click" , () => {
-    if(userNameRemove.value && userFamilyRemove.value){
+    if(userNameRemove.value && userPhoneRemove.value){
         let userName = userNameRemove.value;
-        let userFamily = userFamilyRemove.value; 
+        let userPhone = userPhoneRemove.value; 
 
         fetch(`https://technology-shop-databace-default-rtdb.firebaseio.com/login.json`)
             .then(res => res.json())
             .then(data => {
                 let userData = Object.entries(data)
                 userData.forEach(user => {
-                    if( userName == user[1].userName && userFamily == user[1].userFamily ){
+                    if( userName == user[1].userName && userPhone == user[1].userPhone ){
                         fetch(`https://technology-shop-databace-default-rtdb.firebaseio.com/login/${user[0]}.json` , {
                             method: "DELETE"
                         })
