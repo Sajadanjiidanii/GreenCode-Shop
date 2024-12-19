@@ -48,6 +48,9 @@
         text-align: center;
         justify-content: center;
     }
+    #addCartBtn{
+        margin: 0 auto;
+    }
     .footer{
         margin-top: 200px;
     }
