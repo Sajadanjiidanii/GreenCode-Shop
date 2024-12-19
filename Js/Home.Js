@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
   loadThemeFromStorage();
 });
 
+/// login chack
+let userAccountBtn = $.querySelector("#userAccountBtn")
+let outAcountBtn = $.querySelector("#outAcountBtn")
+
+import { hasUserTokenCookie , deleteCookie } from "../Componets/check-login/check-login.js"
+
+userAccountBtn.addEventListener("click", hasUserTokenCookie)
+outAcountBtn.addEventListener("click", deleteCookie)
 
 /// Search Handler
 import { searchHandler } from "../Componets/search/search.js";
