@@ -130,7 +130,7 @@ function clickItembox(e){
     priceItem: target.getAttribute("priceItem"),
   }
   localStorage.setItem("item" , JSON.stringify(infoForward))
-  location.href = "../Html/Item.Html"
+  location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Item.Html"
 }
 
 let itemboxs = $.querySelectorAll("item-box")
