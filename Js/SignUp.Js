@@ -13,10 +13,10 @@ submitBtn.addEventListener("click", e => {
     e.preventDefault();
     if (userName.value && userPhone.value && userEmail.value && userPassword.value) {
         let userInfo = {
-            userName: userName.value,
-            userPhone: userPhone.value,
-            userEmail: userEmail.value,
-            userPassword: userPassword.value
+            userName: userName.value.toLowerCase(),
+            userPhone: userPhone.value.toLowerCase(),
+            userEmail: userEmail.value.toLowerCase(),
+            userPassword: userPassword.value.toLowerCase()
         };
 
         fetch(`https://technology-shop-databace-default-rtdb.firebaseio.com/login.json`)
