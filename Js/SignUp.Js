@@ -1,4 +1,6 @@
 const $ = document
+const statusModule = $.querySelector(".status")
+const statusText = $.querySelector(".status > h3")
 
 // get html element tag
 const userName = $.querySelector("#userName")
