@@ -86,6 +86,8 @@ let showModule = (text, color) => {
     statusText.innerHTML = text;
     setTimeout(() => {
         statusModule.style.display = "none";
-        location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/"
+        if(color === "Green"){
+            location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/"
+        }
     }, 3000);
 };
