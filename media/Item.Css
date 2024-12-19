@@ -1,50 +1,73 @@
-/* /// add font /// */
-
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../Font/dana\ font/dana-extrabold.woff') format(woff);
+/* /// Desctop /// */
+@media (min-width: 1025px) {
+    .logo{
+        width: 7%;
+    }
 }
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../Font/dana\ font/dana-bold.woff') format(woff);
+/* /// Other /// */
+@media (max-width : 940px){
+    .menu-header{
+        display: none;
+    }
+    #menu-btn{
+        display: block;
+    }
+    #openSearchBtnHeader{
+        display: block;
+    }
+    #inputHeader{
+        display: none;
+    }
+    .main-container{
+        display: grid;
+    }
+    .footer-main{
+        grid-auto-flow: row;
+    }
+    .menu-footer{
+        display: grid;
+        grid-template-rows: 65% 35%;
+        grid-template-columns: 50% 50%;
+    }
 }
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../Font/dana\ font/dana-black.woff') format(woff);
+@media (min-width : 940px){
+    #inputHeader{
+        display: block;
+    }
+    #openSearchBtnHeader{
+        display: none;
+    }
 }
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../Font/dana\ font/dana-medium.woff') format(woff);
+/* mobile */
+@media (max-width: 700px) {
+    .main-container{
+        grid-auto-flow: row;
+        grid-template-rows: 55% 15%;
+    }
+    .main-content{
+        text-align: center;
+        justify-content: center;
+    }
+    .footer{
+        margin-top: 200px;
+    }
 }
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../Font/dana\ font/dana-regular.woff') format(woff);
+@media (max-width: 600px) {
+    #themModeBtnHeader{
+        display: none;
+    }
+    #openSearchBtnHeader{
+        display: none;
+    }
 }
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../Font/dana\ font/dana-light.woff') format(woff);
-}
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../Font/dana\ font/dana-extralight.woff') format(woff);
-}
-@font-face {
-    font-family: 'dana';
-    font-style: normal;
-    font-weight: 200;
-    src: url('../Font/dana\ font/dana-thin.woff') format(woff);
+@media (max-width: 430px){
+    .menu-footer{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,25%);
+    }
+    .menu-footer > li{
+        padding: 10px;
+    }
 }
