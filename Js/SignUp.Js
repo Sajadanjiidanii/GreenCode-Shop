@@ -23,8 +23,12 @@ submitBtn.addEventListener("click", e => {
             .then(data => {
                 let users = Object.entries(data)
                 users.forEach(user => {
-                    if( userName == user[1].userName && userPhone == user[1].userPhone && userEmail == user[1].userEmail && userPassword == user[1].userPassword){
-                        showModule("شما قبلا ثبت نام کرده اید", "skyblue")
+                    if( userName == user[1].userName ){
+                        showModule("این نام کاربری قبلا ثبت شده است", "skyblue")
+                    }else if( userPhone == user[1].userPhone){
+                        showModule("این شماره قبلا ثبت شده است", "skyblue")
+                    }else if( userEmail == user[1].userEmail){
+                        showModule("این ایمیل قبلا ثبت شده است", "skyblue")
                     }else{
                         fetch(`https://technology-shop-databace-default-rtdb.firebaseio.com/login.json`, {
                             method: `POST`,
