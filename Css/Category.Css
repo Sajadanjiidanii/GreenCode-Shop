@@ -178,6 +178,9 @@ a{
 #menu-btn{
     display: none;
 }
+#outAcountBtn{
+    display: none;
+}
 
 .menu-header{
     display: flex;
