@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadThemeFromStorage();
 });
 
+
 /// Search Handler
 import { searchHandler } from "../Componets/search/search.js";
 searchHandler()
@@ -38,7 +39,6 @@ import { sliderHandler } from "../Componets/slider/slider.js";
 sliderHandler();
 /// scroll handler
 
-// انتخاب تمام لیست‌های اسکرولی
 const listItems = document.querySelectorAll('.listItem');
 
 listItems.forEach((listItem) => {
@@ -80,7 +80,25 @@ listItems.forEach((listItem) => {
   });
 });
 
+/// login chack
+let userAccountBtn = $.querySelector("#userAccountBtn")
+let outAcountBtn = $.querySelector("#outAcountBtn")
 
+function hasUserTokenCookie() {
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.startsWith('user-token=')) {
+      userAccountBtn.style.display = "none"
+      outAcountBtn.style.display = "block"
+    }
+  }
+}
+
+outAcountBtn.addEventListener("click", () => {
+  userAccountBtn.style.display = "block";
+  outAcountBtn.style.display = "none"
+})
 
 /// img drag handler
 $.querySelectorAll('img').forEach(img => {
@@ -95,3 +113,4 @@ let clear = (inputTarget) => {
     inputTarget.value = "";
 }
 
+window.addEventListener("DOMContentLoaded" , hasUserTokenCookie)
