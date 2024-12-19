@@ -10,6 +10,7 @@ const userPasswordInp = $.querySelector("#userPasswordInp")
 const addUserBtn = $.querySelector("#addUserBtn")
 
 addUserBtn.addEventListener("click",() => {
+    console.log(`user Name : ${userNameInp} , user Family : ${userFamilyInp} , user Password : ${userPasswordInp}`)
     if(userNameInp && userFamilyInp && userPasswordInp){
         let userInfo = {
             userName : userNameInp.value,
