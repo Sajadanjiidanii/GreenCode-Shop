@@ -171,3 +171,19 @@ a{
     width: 60%;
     height: 10px;
 }
+/* status style */
+.status{
+    top: 10px;
+    width: 30%;
+    right: 20px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+    color: white;
+    position: fixed;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(255, 204, 0);
+}
