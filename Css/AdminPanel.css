@@ -1,0 +1,258 @@
+/* /// add font /// */
+
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../Font/dana\ font/dana-extrabold.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../Font/dana\ font/dana-bold.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Font/dana\ font/dana-black.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../Font/dana\ font/dana-medium.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../Font/dana\ font/dana-regular.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Font/dana\ font/dana-light.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Font/dana\ font/dana-extralight.woff') format(woff);
+}
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../Font/dana\ font/dana-thin.woff') format(woff);
+}
+
+/* restart css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'dana';
+}
+
+/* /// add styles /// */
+
+/* add continer style */
+.addContiner{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-gap: 20px;
+    margin: 30px 0;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-rows: 430px;
+    grid-template-columns: repeat(3,30%);
+}
+/* add content continer */
+.contentContainer{
+    display: grid;
+    border-radius: 10px;
+    grid-auto-flow: row;
+    grid-auto-rows: 20% 80%;
+    grid-template-columns: 100%;
+    border: 2px solid green;
+}
+/* add iconbox and icon */
+.addIconBox{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    background-color: greenyellow;
+    border-radius: 100px;
+}
+.addIconBox > .addIcons{
+    color: green;
+    font-size: 30px;
+}
+/* add title style */
+.addTitle{
+    color: green;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+/* add input style */
+.addInput{
+    display: block;
+    width: 90%;
+    height: 30px;
+    padding-right: 10px;
+    border-radius: 3px;
+    margin: 10px auto;
+    border: 1.5px solid green;
+}
+/* add title input */
+.titleInput{
+    margin: 10px 30px;
+}
+/* add btn style */
+.addBtn{
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    color: green;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: white;
+    border: 1.5px solid green;
+}
+.addBtn:hover{
+    color: white;
+    background-color: green;
+}
+/* radio continer */
+.radiosContiner{
+    display: grid;
+    height: auto;
+    margin: 20px 15px;
+    grid-auto-flow: column;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(4,27%);
+}
+.radiosContiner span{
+    margin-right: -5px;
+}
+
+.groupinput{
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* helf group continer */
+.groupHelf{
+    display: grid;
+    justify-content: end;
+    grid-template-rows: repeat(2,48%);
+    grid-template-columns: repeat(2,48%);
+}
+
+/* helf input style */
+.helfInput{
+    width: 90%;
+    padding-right: 10px;
+    border-radius: 3px;
+    border: 1.5px solid green;
+}
+
+/* /// remove styles /// */
+
+.removecontentContainer{
+    display: grid;
+    padding-top: 20px;
+    border-radius: 10px;
+    grid-auto-flow: row;
+    grid-auto-rows: 20% 80%;
+    grid-template-columns: 100%;
+    border: 2px solid red;
+}
+.removeContiner{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-gap: 20px;
+    margin: 30px 0;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-rows: 350px;
+    grid-template-columns: repeat(3,30%);
+}
+.removeIconBox{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: rgb(254, 130, 130);
+    border-radius: 100px;
+}
+.removeIconBox > .removeIcons{
+    color: red;
+    font-size: 30px;
+}
+.removeTitle{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+.removeInput{
+    display: block;
+    width: 90%;
+    height: 30px;
+    padding-right: 10px;
+    border-radius: 3px;
+    margin: 10px auto;
+    border: 1.5px solid red;
+}
+.removeBtn{
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    color: red;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: white;
+    border: 1.5px solid red;
+}
+.removeBtn:hover{
+    color: white;
+    background-color: red;
+}
+
+/* status style */
+.status{
+    top: 10px;
+    width: 30%;
+    right: 20px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+    color: white;
+    position: fixed;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(255, 204, 0);
+}
