@@ -3,20 +3,25 @@ const statusModule = $.querySelector(".status")
 const statusText = $.querySelector(".status > h3")
 
 // get html element tag
-const userName = $.querySelector("#userName")
-const userPhone = $.querySelector("#userPhone")
-const userEmail = $.querySelector("#userEmail")
-const userPassword = $.querySelector("#userPassword")
+const userNameInp = $.querySelector("#userName")
+const userPhoneInp = $.querySelector("#userPhone")
+const userEmailInp = $.querySelector("#userEmail")
+const userPasswordInp = $.querySelector("#userPassword")
 const submitBtn = $.querySelector("#submitBtn")
 
 submitBtn.addEventListener("click", e => {
     e.preventDefault();
-    if (userName.value && userPhone.value && userEmail.value && userPassword.value) {
+    if (userNameInp.value && userPhoneInp.value && userEmailInp.value && userPasswordInp.value) {
+        let userName = userNameInp.value;
+        let userPhone = userPhoneInp.value;
+        let userEmail = userEmailInp.value;
+        let userPassword = userPasswordInp.value;
+
         let userInfo = {
-            userName: userName.value.toLowerCase(),
-            userPhone: userPhone.value.toLowerCase(),
-            userEmail: userEmail.value.toLowerCase(),
-            userPassword: userPassword.value.toLowerCase()
+            userName: userName.toLowerCase(),
+            userPhone: userPhone.toLowerCase(),
+            userEmail: userEmail.toLowerCase(),
+            userPassword: userPassword.toLowerCase()
         };
 
         fetch(`https://technology-shop-databace-default-rtdb.firebaseio.com/login.json`)
