@@ -10,8 +10,7 @@ const userPasswordInp = $.querySelector("#userPasswordInp")
 const addUserBtn = $.querySelector("#addUserBtn")
 
 addUserBtn.addEventListener("click",() => {
-    console.log(`user Name : ${userNameInp} , user Family : ${userFamilyInp} , user Password : ${userPasswordInp}`)
-    if(userNameInp && userFamilyInp && userPasswordInp){
+    if(userNameInp.value && userFamilyInp.value && userPasswordInp.value){
         let userInfo = {
             userName : userNameInp.value,
             userFamily : userFamilyInp.value,
@@ -50,7 +49,7 @@ const weblogDate = $.querySelector("#weblogDate")
 const addWeblogBtn = $.querySelector("#addWeblogBtn")
 
 addWeblogBtn.addEventListener("click", () => {
-    if(weblogTitle && weblogText && weblogWriter && weblogDate){
+    if(weblogTitle.value && weblogText.value && weblogWriter.value && weblogDate.value){
         let weblogInfo = {
             weblogTitle : weblogTitle.value,
             weblogText : weblogText.value,
@@ -89,7 +88,7 @@ let stockChackValue , itemCategoryValue;
 
 addItemBtn.addEventListener("click", () => {
     const selectedRadio = $.querySelector('input[name="categoryItem"]:checked');
-    if ( ItemNameInp && ItemPriceInp && selectedRadio) {
+    if ( ItemNameInp.value && ItemPriceInp.value && selectedRadio.value) {
         itemCategoryValue = selectedRadio.value;
 
         const stockChack = $.querySelector(".stockChack")
@@ -138,7 +137,7 @@ const weblogDateRemove = $.querySelector("#weblogDateRemove")
 const weblogRemoveBtn = $.querySelector("#weblogRemoveBtn")
 
 weblogRemoveBtn.addEventListener("click" , () => {
-    if(weblogNameRemove && weblogDateRemove){
+    if(weblogNameRemove.value && weblogDateRemove.value){
         let weblogName = weblogNameRemove.value;
         let weblogDate = weblogDateRemove.value; 
 
@@ -180,7 +179,7 @@ const ItemPriceRemove = $.querySelector("#ItemPriceRemove")
 const removeItemBtn = $.querySelector("#removeItemBtn")
 
 removeItemBtn.addEventListener("click" , () => {
-    if(ItemNameRemove && ItemPriceRemove){
+    if(ItemNameRemove.value && ItemPriceRemove.value){
         let itemName = ItemNameRemove.value;
         let itemPrice = ItemPriceRemove.value; 
 
@@ -223,7 +222,7 @@ const userFamilyRemove = $.querySelector("#userFamilyRemove")
 const removeUserBtn = $.querySelector("#removeUserBtn")
 
 removeUserBtn.addEventListener("click" , () => {
-    if(userNameRemove && userFamilyRemove){
+    if(userNameRemove.value && userFamilyRemove.value){
         let userName = userNameRemove.value;
         let userFamily = userFamilyRemove.value; 
 
