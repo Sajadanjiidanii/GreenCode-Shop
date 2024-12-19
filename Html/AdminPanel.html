@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css file -->
+    <link rel="stylesheet" href="../Css/AdminPanel.css">
+    <link rel="stylesheet" href="../media/AdminPanel.css">
+    <!-- // Link Icon File // -->
+    <link rel="stylesheet" href="../Icon/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- module status show -->
+    <div class="status">
+        <h3></h3>
+    </div>
+
+    <!-- add continer -->
+    <div class="addContiner">
+        <!-- all item content continer -->
+        <div class="contentContainer">
+            <!-- icon box continer -->
+            <div class="addIconBox">
+                <i class="fa fa-cart-plus addIcons"></i>
+            </div>
+            <!-- continer form -->
+            <div class="Content">
+                <!-- title -->
+                <h3 class="addTitle">اضافه کردن آیتم</h3>
+                <!-- input get item name -->
+                <p class="titleInput">نام آیتم</p>
+                <input class="addInput" id="ItemNameInp" type="text">
+                <!-- input get item price -->
+                <p class="titleInput">قیمت آیتم</p>
+                <input class="addInput" id="ItemPriceInp" type="text">
+                <!-- continer add input radio -->
+                    <div class="radiosContiner">
+                        <!-- continer for row radio -->
+                        <div class="groupinput">
+                            <!-- get category item -->
+                            <input name="categoryItem" type="radio" value="pc" checked>
+                            <span>کامپیوتر</span>
+                        </div>
+                        <div class="groupinput">
+                            <!-- get category item -->
+                            <input name="categoryItem" type="radio" value="laptop">
+                            <span>لپتاپ</span>
+                        </div>
+                        <div class="groupinput">
+                            <!-- get category item -->
+                            <input name="categoryItem" type="radio" value="console">
+                            <span>کنسول</span>
+                        </div>
+                        <div class="groupinput">
+                            <!-- get category item -->
+                            <input name="categoryItem" type="radio" value="mobile">
+                            <span>موبایل</span>
+                    </div>
+                </div>
+                <!-- continer for no breack input and title -->
+                <div class="groupinput">
+                    <!-- get stock input -->
+                    <input name="categoryItem" type="checkbox" class="stockChack">
+                    <span>کالای استوک</span>
+                </div>
+                <!-- add item btn -->
+                <button class="addBtn" id="addItemBtn">اضافه کردن آیتم</button>
+
+            </div>
+        </div>
+
+        <!-- all user content continer -->
+        <div class="contentContainer">
+            <!-- icon box continer -->
+            <div class="addIconBox">
+                <i class="fa fa-drivers-license-o addIcons"></i>
+            </div>
+            <!-- continer form -->
+            <div class="Content">
+                <!-- title -->
+                <h3 class="addTitle">اضافه کردن کاربر</h3>
+                <!-- input get name -->
+                <p class="titleInput">نام کاربر</p>
+                <input class="addInput" id="userNameInp" type="text">
+                <!-- input get last name -->
+                <p class="titleInput">نام خانوادگی کاربر</p>
+                <input class="addInput" id="userFamilyInp" type="text">
+                <!-- input get password -->
+                <p class="titleInput">رمز کاربر</p>
+                <input class="addInput" id="userPasswordInp" type="text">
+                <!-- add user btn -->
+                <button id="addUserBtn" class="addBtn">اضافه کردن کاربر</button>
+            </div>
+        </div>
+
+        <!-- all weblog content continer -->
+        <div class="contentContainer">
+            <!-- icon box continer -->
+            <div class="addIconBox">
+                <i class="fa fa-file-word-o addIcons"></i>
+            </div>
+            <!-- continer form -->
+            <div class="Content">
+                <!-- title -->
+                <h3 class="addTitle">اضافه کردن وبلاگ</h3>
+                <!-- get title weblog -->
+                <p class="titleInput">تایتل وبلاگ</p>
+                <input class="addInput" id="weblogTitle" type="text">
+                <!-- get text weblog -->
+                <p class="titleInput">متن وبلاگ</p>
+                <textarea class="addInput" id="weblogText"></textarea>
+                <!-- get weblog date and weblog writer -->
+                <div class="groupHelf">
+                    <p class="titleInput">نام نویسنده</p>
+                    <p class="titleInput">تاریخ</p>
+                    <input class="helfInput" id="weblogWriter" type="text">
+                    <input class="helfInput" id="weblogDate" type="text">
+                </div>
+                <!-- add weblog btn -->
+                <button class="addBtn" id="addWeblogBtn">اضافه کردن کاربر</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- remove continer -->
+    <div class="removeContiner">
+        <!-- all item content continer -->
+        <div class="removecontentContainer">
+            <!-- icon box continer -->
+            <div class="removeIconBox">
+                <i class="fa fa-cart-arrow-down removeIcons"></i>
+            </div>
+            <!-- continer form -->
+            <div class="Content">
+                <!-- title -->
+                <h3 class="removeTitle">حذف کردن آیتم</h3>
+                <!-- input get item name -->
+                <p class="titleInput">نام آیتم</p>
+                <input class="removeInput" id="ItemNameRemove" type="text">
+                <!-- input get item price -->
+                <p class="titleInput">قیمت آیتم</p>
+                <input class="removeInput" id="ItemPriceRemove" type="text">
+                <!-- remove item btn -->
+                <button class="removeBtn" id="removeItemBtn">حذف کردن آیتم</button>
+
+            </div>
+        </div>
+
+        <!-- all user content continer -->
+        <div class="removecontentContainer">
+            <!-- icon box continer -->
+            <div class="removeIconBox">
+                <i class="fa fa-drivers-license-o removeIcons"></i>
+            </div>
+            <!-- continer form -->
+            <div class="Content">
+                <!-- title -->
+                <h3 class="removeTitle">اضافه کردن کاربر</h3>
+                <!-- input get name -->
+                <p class="titleInput">نام کاربر</p>
+                <input class="removeInput" id="userNameRemove" type="text">
+                <!-- input get last name -->
+                <p class="titleInput">نام خانوادگی کاربر</p>
+                <input class="removeInput" id="userFamilyRemove" type="text">
+                <!-- remove user btn -->
+                <button id="removeUserBtn" class="removeBtn">حذف کردن کاربر</button>
+            </div>
+        </div>
+
+        <!-- all weblog content continer -->
+        <div class="removecontentContainer">
+            <!-- icon box continer -->
+            <div class="removeIconBox">
+                <i class="fa fa-file-word-o removeIcons"></i>
+            </div>
+            <!-- continer form -->
+            <div class="Content">
+                <!-- title -->
+                <h3 class="removeTitle">اضافه کردن وبلاگ</h3>
+                <!-- get title weblog -->
+                <p class="titleInput">تایتل وبلاگ</p>
+                <input class="removeInput" id="weblogNameRemove" type="text">
+                <!-- get text weblog -->
+                <p class="titleInput">تاریخ وبلاگ</p>
+                <input class="removeInput" id="weblogDateRemove" type="text">
+                <!-- remove weblog btn -->
+                <button class="removeBtn" id="weblogRemoveBtn">حذف کردن کاربر</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Js/AdminPanel.js"></script>
+</html>
