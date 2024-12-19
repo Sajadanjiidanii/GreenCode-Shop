@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="../Icon/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- module status show -->
+    <div class="status">
+        <h3></h3>
+    </div>
+
     <div class="container">
         <img id="logo" src="../Img/Logo.png">
          <div class="content">
@@ -19,20 +24,20 @@
                 <form class="form-sign">
                     <div class="group">
                         <h3>ورود</h3>
-                        <span>حساب کاربری ندارید؟<a href="https://sajadanjiidanii.github.io/GreenCode-Shop/Html/SignUp.Html"> ثبت نام کنید </a></span>
+                        <span>حساب کاربری ندارید؟<a href="#"> ثبت نام کنید </a></span>
                     </div>
                     <div class="inputContainer">
-                        <input class="inputForm" type="email" placeholder="ایمیل">
+                        <input id="userEmail" class="inputForm" type="email" placeholder="ایمیل">
                         <i class="fa fa-envelope-o iconInputs"></i>
                     </div>
                     <div class="inputContainer">
-                        <input class="inputForm" type="password" placeholder="رمز عبور">
+                        <input id="userPassword" class="inputForm" type="password" placeholder="رمز عبور">
                         <i class="fa fa-lock iconInputs"></i>
                     </div>
                     <div class="forgetBox">
                         <a href="#" id="forgetPassword">فراموشی رمز عبور</a>
                     </div>
-                    <button class="submitForm">ثبت نام</button>
+                    <button id="submitBtn" class="submitForm">ثبت نام</button>
                 </form>
             </div>
             <div class="picture-container">
