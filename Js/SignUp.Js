@@ -56,7 +56,7 @@ submitBtn.addEventListener("click", e => {
                     })
                         .then(res => {
                             if (res.ok) {
-                                showModule("خوش آمدید", "green");
+                                showModule("خوش آمدید", "Green");
                             } else {
                                 showModule("ثبت نام با مشکل مواجه شد", "red");
                             }
