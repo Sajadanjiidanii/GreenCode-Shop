@@ -119,3 +119,21 @@ let clear = (inputTarget) => {
 }
 
 window.addEventListener("DOMContentLoaded" , hasUserTokenCookie)
+
+/// select item handler
+
+function clickItembox(e){
+  let target = e.target
+  let infoForward = {
+    srcImg: target.getAttribute("srcImg"),
+    nameItem: target.getAttribute("nameItem"),
+    priceItem: target.getAttribute("priceItem"),
+  }
+  localStorage.setItem("item" , JSON.stringify(infoForward))
+  location.href = "../Html/Item.Html"
+}
+
+let itemboxs = $.querySelectorAll("item-box")
+itemboxs.forEach(itembox => {
+  itembox.addEventListener("click" , clickItembox)
+})
