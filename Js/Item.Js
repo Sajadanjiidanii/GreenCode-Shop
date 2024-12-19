@@ -41,7 +41,7 @@ addCartBtn.addEventListener("click", () => {
   localStorage.setItem("cart", JSON.stringify(arrayCart))
 
   localStorage.removeItem("item");
-  location.href = "../Html/Home.html"
+  location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Home.html"
 });
 
 
