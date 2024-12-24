@@ -52,7 +52,6 @@ addCartBtn.addEventListener("click", () => {
   location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Home.html"
 });
 
-
 window.addEventListener("load", () => {
   let itemInfo = JSON.parse(localStorage.getItem("item"))
   let itemImg = $.querySelector("#itemImg")
@@ -62,3 +61,23 @@ window.addEventListener("load", () => {
   let itemPrice = $.querySelector("#itemPrice")
   itemPrice.innerHTML = itemInfo.priceItem
 })
+
+/// color handler
+let colors = $.querySelectorAll(".colorItem")
+colors.forEach(color => {
+    color.addEventListener("click", e => {
+        let target = e.target.id
+        let targetElem = $.getElementById(target)
+        clearColors(targetElem)
+        if(!color.classList.contains("active")){
+            targetElem.classList.add("active")
+            targetElem.style.backgroundColor = target
+        }
+    })
+})
+function clearColors(){
+    colors.forEach(color => {
+        color.classList.remove("active")
+        color.style.backgroundColor = "#fff"
+    })
+}
