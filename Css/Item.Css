@@ -252,7 +252,7 @@ a{
     border-radius: 10px;
     height: 400px;
     margin: 10px auto;
-    color : var(--text-color)
+    color : var(--text-color);
     background-color: var(--bg-item);
 }
 /* img style */
