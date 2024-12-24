@@ -252,7 +252,8 @@ a{
     border-radius: 10px;
     height: 400px;
     margin: 10px auto;
-    background-color: white;
+    color : var(--text-color)
+    background-color: var(--bg-item);
 }
 /* img style */
 .imgContiner{
@@ -263,8 +264,6 @@ a{
 .imgBox{
     width: 65%;
     height: 65%;
-    border-radius: 15px;
-    border: 2px solid #ccc;
 }
 #itemImg{
     width: 100%;
