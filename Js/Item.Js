@@ -72,13 +72,12 @@ const addCartBtn = $.querySelector("#addCartBtn");
 let arrayCart = [];
 
 addCartBtn.addEventListener("click", () => {
-    console.log(`color flag value : ${colorFlag}`)
     if(JSON.parse(localStorage.getItem("cart"))){
         arrayCart = JSON.parse(localStorage.getItem("cart"))
     }
     if(colorFlag){
         let itemInfo = JSON.parse(localStorage.getItem("item"));
-        console.log("yes")
+        
         switch(colorFlag){
             case "orange":
                 itemInfo.colorName = "نارنجی"
@@ -107,7 +106,12 @@ addCartBtn.addEventListener("click", () => {
         localStorage.setItem("cart", JSON.stringify(arrayCart))
         
         localStorage.removeItem("item");
-        console.log("yes")
+        
         location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Home.html"
+    }else{
+        $.querySelector(".modle").style.display = "flex"
+        setTimeout(() => {
+            $.querySelector(".modle").style.display = "none"
+        },3000)
     }
 });
