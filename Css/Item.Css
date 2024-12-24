@@ -243,7 +243,7 @@ a{
     grid-auto-flow: column;
     grid-template-rows: 85% 15%;
 }
-.container{
+.container {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
@@ -252,7 +252,7 @@ a{
     border-radius: 10px;
     height: 400px;
     margin: 10px auto;
-    color : var(--text-color);
+    color: var(--text-color);
     background-color: var(--bg-item);
 }
 /* img style */
