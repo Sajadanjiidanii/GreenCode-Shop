@@ -57,9 +57,6 @@
     #addCartBtn{
         margin: 0 auto;
     }
-    .footer{
-        margin-top: 200px;
-    }
 }
 @media (max-width: 600px) {
     #themModeBtnHeader{
