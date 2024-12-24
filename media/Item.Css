@@ -40,11 +40,11 @@
 }
 /* mobile */
 @media (max-width: 700px) {
-    .container{
+    .container {
         grid-auto-flow: row;
         height: 600px;
-        grid-auto-columns: 100%;
-        grid-auto-rows: 50% 5% 50%;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 5% 50%;
     }
     .main-container{
         grid-auto-flow: row;
