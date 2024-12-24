@@ -431,3 +431,17 @@ a{
     background-color: blue;
 }
 /* /// End Style Footer /// */
+
+/* /// modle /// */
+.modle{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    position: fixed;
+    border-radius: 5px;
+    background-color: rgb(203, 0, 0);
+}
