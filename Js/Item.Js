@@ -34,24 +34,6 @@ outAcountBtn.addEventListener("click", deleteCookie)
 import { searchHandler } from "../Componets/search/search.js";
 searchHandler()
 
-// add cart handler
-const addCartBtn = document.querySelector("#addCartBtn");
-let arrayCart = [];
-
-addCartBtn.addEventListener("click", () => {
-  if(JSON.parse(localStorage.getItem("cart"))){
-    arrayCart = JSON.parse(localStorage.getItem("cart"))
-  }
-  let itemInfo = JSON.parse(localStorage.getItem("item"));
-
-  arrayCart.push(itemInfo)
-
-  localStorage.setItem("cart", JSON.stringify(arrayCart))
-
-  localStorage.removeItem("item");
-  location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Home.html"
-});
-
 window.addEventListener("load", () => {
   let itemInfo = JSON.parse(localStorage.getItem("item"))
   let itemImg = $.querySelector("#itemImg")
@@ -64,10 +46,12 @@ window.addEventListener("load", () => {
 
 /// color handler
 let colors = $.querySelectorAll(".colorItem")
+let colorFlag = false
 colors.forEach(color => {
     color.addEventListener("click", e => {
         let target = e.target.id
         let targetElem = $.getElementById(target)
+        colorFlag = target
         clearColors(targetElem)
         if(!color.classList.contains("active")){
             targetElem.classList.add("active")
@@ -81,3 +65,48 @@ function clearColors(){
         color.style.backgroundColor = "#fff"
     })
 }
+
+// add cart handler
+
+const addCartBtn = $.querySelector("#addCartBtn");
+let arrayCart = [];
+
+addCartBtn.addEventListener("click", () => {
+    if(JSON.parse(localStorage.getItem("cart"))){
+        arrayCart = JSON.parse(localStorage.getItem("cart"))
+    }
+    if(colorFlag){
+        let itemInfo = JSON.parse(localStorage.getItem("item"));
+
+        switch(colorFlag){
+            case "orange":
+                itemInfo.colorName = "نارنجی"
+                itemInfo.colorCode = "orange"
+                break;
+            case "black":
+                itemInfo.colorName = "سیاه"
+                itemInfo.colorCode = "black"
+                break;
+            case "red":
+                itemInfo.colorName = "قرمز"
+                itemInfo.colorCode = "red"
+                break;
+            case "blue":
+                itemInfo.colorName = "آبی"
+                itemInfo.colorCode = "blue"
+                break;
+            case "green":
+                itemInfo.colorName = "سبز"
+                itemInfo.colorCode = "green"
+                break;
+        }
+
+        arrayCart.push(itemInfo)
+        
+        localStorage.setItem("cart", JSON.stringify(arrayCart))
+        
+        localStorage.removeItem("item");
+        console.log("yes")
+        location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Home.html"
+    }
+});
