@@ -108,7 +108,7 @@ window.addEventListener("DOMContentLoaded" , hasUserTokenCookie)
 function clickItembox(e){
   let target = e.target
   let infoForward = {
-    srcImg: target.getAttribute("srcImg"),
+    imgSrc: target.getAttribute("imgSrc"),
     nameItem: target.getAttribute("nameItem"),
     oldPrice: target.getAttribute("oldPrice"),
     newPrice: target.getAttribute("newPrice"),
