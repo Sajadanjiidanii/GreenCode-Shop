@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
   let itemName = $.querySelector("#itemName")
   itemName.innerHTML = itemInfo.nameItem
   let itemPrice = $.querySelector("#itemPrice")
-  itemPrice.innerHTML = itemInfo.priceItem
+  itemPrice.innerHTML = itemInfo.newPrice
 })
 
 /// color handler
