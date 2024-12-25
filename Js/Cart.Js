@@ -7,8 +7,9 @@ import { menuModuleHandler } from "../Componets/menu-module/menu-module.js";
 menuModuleHandler();
 
 /// Change Them ///
-import { changeThem } from "../Componets/change-theme/change-theme.js";
-changeThem();
+import { toggleTheme , loadThemeFromStorage } from "../Componets/change-theme/change-theme.js";
+toggleTheme();
+loadThemeFromStorage();
 
 /// Search Handler
 import { searchHandler } from "../Componets/search/search.js";
