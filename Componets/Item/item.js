@@ -24,10 +24,10 @@ class item extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true))
     }
     connectedCallback(){
-        this.shadowRoot.querySelector("#imgItem").src = this.getAttribute("srcImg")
+        this.shadowRoot.querySelector("#imgItem").src = this.getAttribute("imgSrc")
         this.shadowRoot.querySelector(".nameItem").innerHTML = this.getAttribute("nameItem")
         this.shadowRoot.querySelector(".rateItem").innerHTML = this.getAttribute("rateItem")
-        this.shadowRoot.querySelector(".priceItem").innerHTML = this.getAttribute("priceItem")
+        this.shadowRoot.querySelector(".priceItem").innerHTML = this.getAttribute("newPrice")
     }
 }
 
