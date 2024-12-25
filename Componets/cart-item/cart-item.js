@@ -5,7 +5,7 @@ template.innerHTML = `
     <link rel="stylesheet" href="../Componets/cart-item/cart-item.css">
     <div class="item">
         <div class="imgBox">
-            <img src="../Img/laptop item/laptop-item-1.png">
+            <img id="imgSrc" src="">
         </div>
         <div class="infoBox">
             <h4 id="nameItem">لپتاپ لنوو</h4>
@@ -39,6 +39,7 @@ class cartItem extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true))
     }
     connectedCallback(){
+        this.shadowRoot.querySelector("#imgSrc").src = this.getAttribute("imgSrc")
         this.shadowRoot.querySelector("#nameItem").innerHTML = this.getAttribute("nameItem")
         this.shadowRoot.querySelector("#oldPrice").innerHTML = this.getAttribute("oldPrice")
         this.shadowRoot.querySelector("#newPrice").innerHTML = this.getAttribute("newPrice") + " تومان"
