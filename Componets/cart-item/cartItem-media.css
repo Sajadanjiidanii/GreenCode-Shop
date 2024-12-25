@@ -1,0 +1,24 @@
+@media(max-width: 700px){
+    .item{
+        height: auto;
+        padding: 20px 0;
+        grid-template-rows: auto;
+        grid-template-columns: 25% 37% 27% 13%;
+    }
+    .infoBox h4{
+        font-size: 12px;
+    }
+    .iconBox i{
+        font-size: 12px;
+    }
+    .textInfo{
+        font-size: 10px;
+    }
+    .colorBox{
+        width: 12px;
+        height: 12px;
+    }
+    .priceBox{
+        font-size: 12px;
+    }
+}
