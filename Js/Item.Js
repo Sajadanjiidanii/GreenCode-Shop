@@ -37,7 +37,7 @@ searchHandler()
 window.addEventListener("load", () => {
   let itemInfo = JSON.parse(localStorage.getItem("item"))
   let itemImg = $.querySelector("#itemImg")
-  itemImg.src = itemInfo.srcImg
+  itemImg.src = itemInfo.imgSrc
   let itemName = $.querySelector("#itemName")
   itemName.innerHTML = itemInfo.nameItem
   let itemPrice = $.querySelector("#itemPrice")
