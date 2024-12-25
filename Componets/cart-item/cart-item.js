@@ -3,6 +3,7 @@ let template = $.createElement("template")
 template.innerHTML = `
     <link rel="stylesheet" href="../Icon/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Componets/cart-item/cart-item.css">
+    <link rel="stylesheet" href="../Componets/cart-item/cartItem-media.css">
     <div class="item">
         <div class="imgBox">
             <img id="imgSrc" src="">
