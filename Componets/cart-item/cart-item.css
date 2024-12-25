@@ -10,7 +10,8 @@
     grid-template-columns: 25% 45% 25% 5%;
     grid-template-rows: 90px;
     width: 96%;
-    height: 115px;
+    height: auto;
+    margin: 20px;
     border-bottom: 1px solid var(--bg-color);
 }
 .imgBox{
