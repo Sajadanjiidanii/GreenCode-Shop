@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../media/Cart.Css">
     <!-- // Link Icon File // -->
     <link rel="stylesheet" href="../Icon/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Componets/cart-item/cart-item.css">
 </head>
 <body>
     <div class="nav">
@@ -80,12 +81,8 @@
                 <button id="userCartBtn" class="header-btn">
                     <i class="fa fa-shopping-cart"></i>
                 </button>
-                <a id="userAccountBtn" href="https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Login.Html">
-                <button class="header-btn">
+                <button id="userAccountBtn" class="header-btn">
                     <i class="fa fa-user"></i>
-                </button></a>
-                <button id="outAcountBtn" class="header-btn">
-                    <i class="fa fa-sign-out"></i>
                 </button>
                 
             </div>
@@ -101,177 +98,35 @@
                     <span><i class="fa fa-shopping-basket"></i> سبد خرید</span>
                 </div>
                 <div class="listItem">
-                    <div class="item">
-                        <div class="imgBox">
-                            <img src="../Img/laptop item/laptop-item-1.png">
-                        </div>
-                        <div class="infoBox">
-                            <h4>لپتاپ لنوو</h4>
-                            <div class="iconBox">
-                                <i class="colorBox"></i>
-                                <span class="textInfo">نقره ای</span>
-                            </div>
-                            <div class="iconBox">
-                                <i class="fa fa-truck truck"></i>
-                                <span class="textInfo">ارسال فوری</span>
-                            </div>
-                            <div class="iconBox">
-                                <i class="fa fa-shield shield"></i>
-                                <span class="textInfo">گارانتی 24 ماه</span>
-                            </div>
-                        </div>
-                        <div class="priceBox">
-                            <p id="oldPrice">17,000,000</p>
-                            <p id="newPrice">15,000,000 تومان</p>
-                        </div>
-                        <div class="newInfoBox">
-                            <div class="infoBox">
-                                <h4>لپتاپ لنوو</h4>
-                                <div class="iconBox">
-                                    <i class="colorBox"></i>
-                                    <span class="textInfo">نقره ای</span>
-                                </div>
-                                <div class="iconBox">
-                                    <i class="fa fa-truck truck"></i>
-                                    <span class="textInfo">ارسال فوری</span>
-                                </div>
-                                <div class="iconBox">
-                                    <i class="fa fa-shield shield"></i>
-                                    <span class="textInfo">گارانتی 24 ماه</span>
-                                </div>
-                            </div>
-                            <div class="priceBox">
-                                <p id="oldPrice">17,000,000</p>
-                                <p id="newPrice">15,000,000 تومان</p>
-                            </div>
-                        </div>
-                        <div class="deletebox">
-                            <i class="fa fa-trash-o"></i>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="imgBox">
-                            <img src="../Img/mobile item/mobile-item-1.png">
-                        </div>
-                        <div class="infoBox">
-                            <h4>لپتاپ لنوو</h4>
-                            <div class="iconBox">
-                                <i class="colorBox"></i>
-                                <span class="textInfo">نقره ای</span>
-                            </div>
-                            <div class="iconBox">
-                                <i class="fa fa-truck truck"></i>
-                                <span class="textInfo">ارسال فوری</span>
-                            </div>
-                            <div class="iconBox">
-                                <i class="fa fa-shield shield"></i>
-                                <span class="textInfo">گارانتی 24 ماه</span>
-                            </div>
-                        </div>
-                        <div class="priceBox">
-                            <p id="oldPrice">17,000,000</p>
-                            <p id="newPrice">15,000,000 تومان</p>
-                        </div>
-                        <div class="newInfoBox">
-                            <div class="infoBox">
-                                <h4>لپتاپ لنوو</h4>
-                                <div class="iconBox">
-                                    <i class="colorBox"></i>
-                                    <span class="textInfo">نقره ای</span>
-                                </div>
-                                <div class="iconBox">
-                                    <i class="fa fa-truck truck"></i>
-                                    <span class="textInfo">ارسال فوری</span>
-                                </div>
-                                <div class="iconBox">
-                                    <i class="fa fa-shield shield"></i>
-                                    <span class="textInfo">گارانتی 24 ماه</span>
-                                </div>
-                            </div>
-                            <div class="priceBox">
-                                <p id="oldPrice">17,000,000</p>
-                                <p id="newPrice">15,000,000 تومان</p>
-                            </div>
-                        </div>
-                        <div class="deletebox">
-                            <i class="fa fa-trash-o"></i>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="imgBox">
-                            <img src="../Img/laptop item/laptop-item-1.png">
-                        </div>
-                        <div class="infoBox">
-                            <h4>لپتاپ لنوو</h4>
-                            <div class="iconBox">
-                                <i class="colorBox"></i>
-                                <span class="textInfo">نقره ای</span>
-                            </div>
-                            <div class="iconBox">
-                                <i class="fa fa-truck truck"></i>
-                                <span class="textInfo">ارسال فوری</span>
-                            </div>
-                            <div class="iconBox">
-                                <i class="fa fa-shield shield"></i>
-                                <span class="textInfo">گارانتی 24 ماه</span>
-                            </div>
-                        </div>
-                        <div class="priceBox">
-                            <p id="oldPrice">17,000,000</p>
-                            <p id="newPrice">15,000,000 تومان</p>
-                        </div>
-                        <div class="newInfoBox">
-                            <div class="infoBox">
-                                <h4>لپتاپ لنوو</h4>
-                                <div class="iconBox">
-                                    <i class="colorBox"></i>
-                                    <span class="textInfo">نقره ای</span>
-                                </div>
-                                <div class="iconBox">
-                                    <i class="fa fa-truck truck"></i>
-                                    <span class="textInfo">ارسال فوری</span>
-                                </div>
-                                <div class="iconBox">
-                                    <i class="fa fa-shield shield"></i>
-                                    <span class="textInfo">گارانتی 24 ماه</span>
-                                </div>
-                            </div>
-                            <div class="priceBox">
-                                <p id="oldPrice">17,000,000</p>
-                                <p id="newPrice">15,000,000 تومان</p>
-                            </div>
-                        </div>
-                        <div class="deletebox">
-                            <i class="fa fa-trash-o"></i>
-                        </div>
-                    </div>
-                </div>
+                    <item-cart nameItem="لپتاپ لنوو" oldPrice="17,000,000" newPrice="15,000,000" ItemColor="قرمز" colorCode="red"></item-cart>
+                    <item-cart nameItem="لپتاپ لنوو" oldPrice="17,000,000" newPrice="15,000,000" ItemColor="قرمز" colorCode="red"></item-cart>
+                    <item-cart nameItem="لپتاپ لنوو" oldPrice="17,000,000" newPrice="15,000,000" ItemColor="قرمز" colorCode="red"></item-cart>
             </div>
-            <div class="information-price">
-                <div class="titleBox">
-                    <span><i class="fa fa-credit-card"></i> اطلاعات پرداخت</span>
+        </div>
+        <div class="information-price">
+            <div class="titleBox">
+                <span><i class="fa fa-credit-card"></i> اطلاعات پرداخت</span>
+            </div>
+            <div class="information">
+                <div class="box">
+                    <p>مبلغ کل</p>
+                    <p>30,000,000 تومان</p>
                 </div>
-                <div class="information">
-                    <div class="box">
-                        <p>مبلغ کل</p>
-                        <p>30,000,000 تومان</p>
-                    </div>
-                    <div class="box box2">
-                        <p>تخفیف</p>
-                        <p>3,000,000 تومان</p>
-                    </div>
-                    <div class="box box3">
-                        <h5>مجموع :</h5>
-                        <h4>27,000,000 تومان</h4>
-                    </div>
-                    <div class="boxfinish">
-                        <input type="checkbox">
-                        <span>قوانین را مطالعه کردم .</span>
-                        <a href="#">(مشاهده)</a>
-                    </div>
-                    <button id="submitBuy">تکمیل فرایند</button>
-                    <!-- <button>تکمیل خرید</button> -->
+                <div class="box box2">
+                    <p>تخفیف</p>
+                    <p>3,000,000 تومان</p>
                 </div>
+                <div class="box box3">
+                    <h5>مجموع :</h5>
+                    <h4>27,000,000 تومان</h4>
+                </div>
+                <div class="boxfinish">
+                    <input type="checkbox">
+                    <span>قوانین را مطالعه کردم .</span>
+                    <a href="#">(مشاهده)</a>
+                </div>
+                <button id="submitBuy">تکمیل فرایند</button>
+                <!-- <button>تکمیل خرید</button> -->
             </div>
         </div>
     </div>
