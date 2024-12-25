@@ -42,7 +42,7 @@ window.addEventListener("load",() => {
     cartItems.forEach(item => {
         console.log(item)
         $.querySelector(".listItem").insertAdjacentHTML("beforeend",`
-                <item-cart imgSrc="${item.imgSrc}" nameItem="${item.nameItem}" oldPrice="${item.oldPrice}" newPrice="${item.newPrice}" ItemColor="${item.colorName}" colorCode="${item.colorCode}"></item-cart>
+                <item-cart imgSrc="${item.srcImg}" nameItem="${item.nameItem}" oldPrice="${item.oldPrice}" newPrice="${item.priceItem}" ItemColor="${item.colorName}" colorCode="${item.colorCode}"></item-cart>
             `)
     })
 })
