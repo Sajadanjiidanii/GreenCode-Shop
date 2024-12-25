@@ -110,7 +110,8 @@ function clickItembox(e){
   let infoForward = {
     srcImg: target.getAttribute("srcImg"),
     nameItem: target.getAttribute("nameItem"),
-    priceItem: target.getAttribute("priceItem"),
+    oldPrice: target.getAttribute("oldPrice"),
+    newPrice: target.getAttribute("newPrice"),
   }
   localStorage.setItem("item" , JSON.stringify(infoForward))
   location.href = "https://sajadanjiidanii.github.io/GreenCode-Shop/Html/Item.Html"
