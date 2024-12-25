@@ -22,3 +22,18 @@ import { hasUserTokenCookie , deleteCookie } from "../Componets/check-login/chec
 
 userAccountBtn.addEventListener("click", hasUserTokenCookie)
 outAcountBtn.addEventListener("click", deleteCookie)
+
+// Cart Item Handler
+import { cartItem } from "../Componets/cart-item/cart-item.js";
+window.customElements.define("item-cart", cartItem)
+
+/// Item Cart Handler
+window.addEventListener("load",() => {
+    let cartItems = JSON.parse(localStorage.getItem("cart"))
+    cartItems.forEach(item => {
+        console.log(item)
+        $.querySelector(".listItem").insertAdjacentHTML("beforeend",`
+                <item-cart imgSrc="${item.imgSrc}" nameItem="${item.nameItem}" oldPrice="${item.oldPrice}" newPrice="${item.newPrice}" ItemColor="${item.colorName}" colorCode="${item.colorCode}"></item-cart>
+            `)
+    })
+})
