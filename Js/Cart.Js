@@ -39,10 +39,17 @@ window.customElements.define("item-cart", cartItem)
 /// Item Cart Handler
 window.addEventListener("load",() => {
     let cartItems = JSON.parse(localStorage.getItem("cart"))
+    let sum,discount,result;
     cartItems.forEach(item => {
         console.log(item)
         $.querySelector(".listItem").insertAdjacentHTML("beforeend",`
-                <item-cart imgSrc="${item.srcImg}" nameItem="${item.nameItem}" oldPrice="${item.oldPrice}" newPrice="${item.priceItem}" ItemColor="${item.colorName}" colorCode="${item.colorCode}"></item-cart>
+                <item-cart imgSrc="${item.imgSrc}" nameItem="${item.nameItem}" oldPrice="${item.oldPrice}" newPrice="${item.newPrice}" ItemColor="${item.colorName}" colorCode="${item.colorCode}"></item-cart>
             `)
+        sum = sum + Number(item.newPrice)
+        discount = discount + (Number(item.oldPrice) - Number(item.newPrice))
+        result = sum - discount
     })
+    $.querySelector("#allPrice").innerHTML = sum + " تومان"
+    $.querySelector("#discountPrice").innerHTML = discount + " تومان"
+    $.querySelector("#resultPrice").innerHTML = result + " تومان"    
 })
